@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    
+    android:orientation="vertical"
+    tools:context=".ActivityRegisterA" >
+    
+    <LinearLayout android:id="@+id/llRegisterContainer"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="100dp"
+        >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="logo"
+        android:paddingTop="10dp"
+        android:src="@drawable/logo"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvRegisterPhoneLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Enter Mobile No. with Country Code"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/txtPhoneNumberRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/field_boxes_grey"
+            android:ems="10"
+            android:hint="@string/_9745678987"
+            android:inputType="phone"
+            android:paddingLeft="15dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnGetOTPRegister"
+            android:layout_width="100dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/button_shape_selected_style_oval"
+            android:padding="4dp"
+            android:text="@string/get_otp"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:text="By continuing, I agree to mypeID"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvAgreeURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="User Agreement and Term of Services"
+        android:textColor="#00f"
+        android:textSize="10sp" />
+</LinearLayout>
+</LinearLayout>

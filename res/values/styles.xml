@@ -1,0 +1,42 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionMenuTextColor">@color/button_bg</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light"></style>
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">#fff</item>
+        <item name="android:textColor">@color/button_bg</item>
+        
+        
+    </style>
+
+    <style name="Widget.App.EditText" parent="android:Widget.EditText"></style>
+
+    <style name="ButtonTheme" parent="android:Widget.Button">
+        <item name="android:textColor">#1C5D99</item>
+        <item name="android:background">@drawable/button_shape_style</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="EditBoxTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/field_boxes</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">15dip</item>
+    </style>
+
+    <style name="box_withoutlines">
+        <item name="android:background">@drawable/field_boxes_withoutborder</item>
+    </style>
+
+</resources>

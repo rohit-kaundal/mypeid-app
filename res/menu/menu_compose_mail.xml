@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_send"
+        android:showAsAction="always"
+        android:title="&#xf1d9;"/>
+    <item
+        android:id="@+id/action_attachfile"
+        android:title="Attach file"/>
+    <item
+        android:id="@+id/action_addccbcc"
+        android:title="Add Cc/Bcc"/>
+    <item
+        android:id="@+id/action_savedraft"
+        android:title="Save draft"/>
+    <item
+        android:id="@+id/action_discard"
+        android:title="Discard"/>
+
+</menu>

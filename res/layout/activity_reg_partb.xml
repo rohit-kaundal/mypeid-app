@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ActivityRegisterB" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/tvRegisterLabel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Enter Preferred Password &amp; received OTP"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/txtRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/field_boxes_grey"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/txtRegisterVerifyPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/field_boxes_grey"
+            android:ems="10"
+            android:hint="@string/re_enter_password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/txtRegisterOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/field_boxes_grey"
+            android:ems="10"
+            android:hint="@string/otp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:text="@string/register"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

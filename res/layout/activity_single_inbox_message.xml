@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ccc"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtsinglesubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:text="Medium Text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvFolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-16dp"
+        android:background="#ddd"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="inbox"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_avatar_singlemail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:text="From:"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtsinglefrom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:paddingLeft="10dp"
+                        android:text="kaundal.rohit@gmail.com"
+                        android:textColor="#00c"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:text="To:"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtsingleto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:paddingLeft="10dp"
+                        android:text="kaundal.rohit@gmail.com"
+                        android:textColor="#00c"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:text="Date:"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtsingledate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:paddingLeft="10dp"
+                        android:text="2nd June, 2015"
+                        android:textColor="#ccc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#fff"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etReplyText"
+            style="@style/box_withoutlines"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingRight="82dp"
+            android:inputType="textMultiLine"
+            android:text="Reply message here..."
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnSendMail"
+            android:layout_marginTop="-50dp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:text="Send" />
+    </LinearLayout>
+
+</LinearLayout>
